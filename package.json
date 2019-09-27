@@ -1,0 +1,22 @@
+{
+  "name": "uio",
+  "version": "1.0.0",
+  "description": "uio",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm run test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Huooo/UIO.git"
+  },
+  "keywords": [
+    "uio"
+  ],
+  "author": "huooo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Huooo/UIO/issues"
+  },
+  "homepage": "https://github.com/Huooo/UIO#readme"
+}
