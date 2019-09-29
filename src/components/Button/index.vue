@@ -1,12 +1,21 @@
 <template>
-  <button id="uioi-button" class="uioi-button">
+  <button @click="onClick" id="uioi-button" class="uioi-button">
     <slot></slot>
   </button>
 </template>
 
 <script>
 export default {
-  name: 'uioi-button'
+  name: 'uioi-button',
+  methods: {
+    onClick() {
+      console.log('====>  :');
+      const API_URL = 'http://yapi.demo.qunar.com/mock/99330/get/user?id=100';
+      this.axios.get(API_URL).then((res => {
+        console.log('res.data :', res.data);
+      }))
+    }
+  }
 }
 </script>
 
@@ -22,5 +31,6 @@ export default {
   line-height: 30px;
   background-color: #333;
   border-radius: 50px;
+  cursor: pointer;
 }
 </style>
