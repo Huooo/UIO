@@ -11,6 +11,9 @@ export default {
     onClick() {
       console.log('====>  :');
       const API_URL = 'http://yapi.demo.qunar.com/mock/99330/get/user?id=100';
+      console.log('this :', this);
+      console.log('this.axios :', this.axios);
+      console.log('this.axios.get :', this.axios.get);
       this.axios.get(API_URL).then((res => {
         console.log('res.data :', res.data);
       }))
