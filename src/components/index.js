@@ -1,7 +1,7 @@
-import Button from './Button/index.js'
+import Login from './Login/index.js'
 
 const components = {
-  Button
+  Login
 }
 
 const install = function (Vue) {

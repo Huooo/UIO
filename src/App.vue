@@ -1,16 +1,16 @@
 <template>
   <div id="app">
-    <Button>uioi-button</Button>
+    <Login />
   </div>
 </template>
 
 <script>
-import Button from './components/Button/index.vue'
+import Login from './components/Login/index.vue'
 
 export default {
   name: 'app',
   components: {
-    Button
+    Login
   }
 }
 </script>
