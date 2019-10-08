@@ -28,7 +28,7 @@ export default {
   methods: {
     submit() {
       const { merchantId, loginType, loginId, loginPwd } = this;
-      const API_HOST = process.env.NODE_ENV !== 'development' ? 'http://192.168.130.27:8080' : '';
+      const API_HOST = process.env.NODE_ENV !== 'development' ? 'https://cblogin.lianlianpay-inc.com/cb-sso-system' : '';
       const API_URL = `${API_HOST}/cb-sso-web/login`;
 
       axios.post(API_URL, {
